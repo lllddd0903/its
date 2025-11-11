@@ -1,0 +1,92 @@
+score = int(input("Введите ваш балл"))
+if 90 <= score <= 100:
+    grade = "A"
+elif 80 <= score <=89:
+    grade = "B"
+elif 70 <= score <=79:
+    grade = "C"
+elif 60 <= score <= 69:
+    grade = "D"
+elif 0 <= score < 60:
+    grade = "F"
+else:
+    grade = "Неккореткно"
+print("Ваша оценка: ", grade)
+age = int(input("Введите ваш возраст:"))
+if age < 13:
+    status = "Ребенок"
+elif 14 <= age <= 17:
+    status = "Подросток" 
+elif 18 <= age <=64: 
+    status = "Взрослый"
+else: 
+    status = "Пенсионер" 
+print("Ваш статус: ", status)
+number = int(input("Введите число:"))
+if number % 2 == 0:
+    print("Четное число")
+else: 
+    print("Нечетное число")
+correct_login = "admin" 
+correct_password = "12345"
+login = input("Введите логин:")
+password = int(input("Введите пароль:"))
+if login == correct_login and password == correct_password:
+    print("Вход выполнен успешно")
+else:
+    print("Неверный логин или пароль")
+time = int(input("Какой сейчас час?"))
+if 0 <= time <= 11:
+    print("Утро")
+elif 12 <= time <= 17:
+    print("День")
+elif 18 <= time <= 23:
+    print("Вечер")
+temputure = int(input("Какая сейчас температура на улице?"))
+if temputure < 0:
+    print("Холодно")
+elif 0 <= temputure <= 15:
+    print("Прохладно")
+elif 16 <= temputure <= 25:
+    print("Комфортно")
+else:
+    print("Жарко")
+speed = int(input("Какая скорость у автомобиля?"))
+speed_limit = "60"
+if speed <= 60:
+    print("Cкорость в норме")
+elif speed > 60 and speed <= 80:
+    print("Предупреждение")
+elif speed > 80:
+    print("Штраф 500 тг")
+age = int(input("Укажите Ваш возраст:"))
+income = int(input("Укажите ваш доход:"))
+correct_age = "21" 
+correct_income = "50000"
+if age == correct_age and income == correct_income:
+    print("Кредит одобрен")
+else:
+    print("Вам отказано в кредите")
+purchase = int(input("Уажите сумму покупки:"))
+if purchase < 1000:
+    discount = 0
+elif 1000 <= purchase <= 5000:
+    discount = 0.10 
+else:
+    discount = 0.15
+discount_amount = purchase * discount
+total = purchase - discount
+print(f"Сумма скидки: {discount_amount:.2f}")
+print(f"Итоговая сумма к оплате: {total:.2f}")
+age = input("Введите логин:")
+expirience = int(input("Введите пароль:"))
+correct_age = "21" 
+correct_expirience = "5"
+if age == correct_age and expirience == correct_expirience:
+    print("Вы можете работать менеджером")
+elif age == correct_age and expirience != correct_expirience:
+    print("Вам нужен стаж 3 года")
+elif age != correct_age and expirience == correct_expirience:
+    print("Вам нужно быть старше 21")
+else:
+    print("Вы не подходите")
