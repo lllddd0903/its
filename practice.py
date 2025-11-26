@@ -1,20 +1,26 @@
-text = [18, 'Александр', 92, True, 'ACTIVE']
-age = text[0]
-name = text[1]
-score = text[2]
-active = text[3]
-status = text[4]
-if age >= 18 and status == "ACTIVE":
-    print(" Студент принят")
-else:
-    print(" Студент не принят")
-name_2 = name[0]+"." + "*" * (len(name) -1)
-print(name_2)
-if score >= 90:
-    print("Отличник")
-elif score >= 75:
-    print("Хорошист")
-else:
-    print("Нужна помощь")
-status_2 = status.lower()
-print(status_2)
+# def odd_or_even(number):
+#     if not number:
+#         number = [0]
+#         return "Even"
+#     total = sum(number)
+#     if total % 2 == 0:
+#         return "Even"
+#     else:
+#         return "Odd"
+# print(odd_or_even([0]))
+# print(odd_or_even([0, 1, 4]))
+# print(odd_or_even([0, -1, -5]))
+
+# def rps(p1, p2):
+#     if p1 == p2:
+#         return "Draw!"
+#     elif (p1 == "rock" and p2 == "scissors") or \
+#        (p1 == "scissors" and p2 == "paper") or \
+#        (p1 == "paper" and p2 == "rock"):
+#         return "Player 1 won!"
+#     else:
+#         return "Player 2 won!"
+# print(rps("scissors", "paper"))  
+# print(rps("scissors", "rock"))  
+# print(rps("paper", "paper")) 
+
